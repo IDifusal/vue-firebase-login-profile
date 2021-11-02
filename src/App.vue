@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>Vue Chat Firebase</h1>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import { auth } from "./firebase.js";
+console.log(auth);
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-  },
 };
 </script>
 
